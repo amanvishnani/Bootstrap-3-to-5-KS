@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap 4 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap 5 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      div {
+        border: 1px dashed;
+      }
+      div.c1 {
+        background-color: #aaaa;
+      }
+
+      div.c2 {
+        background-color: #abca;
+      }
+      div.c3 {
+        background-color: #cbaa;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Back</a>
+    </nav>
+    <main>
+      <a href="https://getbootstrap.com/docs/3.4/css/#responsive-utilities">
+        Bootstrap 3 display ref</a
+      >
+      <br />
+
+      <a href="https://getbootstrap.com/docs/4.0/utilities/display/">
+        Bootstrap 4 display ref</a
+      >
+      <hr />
+
+      <div class="c1 hidden-sm">hidden-sm</div>
+      <div class="c2 hidden-md">hidden-md</div>
+      <div class="c3 hidden-lg">hidden-lg</div>
+
+      <div class="c4 visible-sm">visible-sm</div>
+      <div class="c5 visible-md">visible-md</div>
+      <div class="c6 visible-lg">visible-lg</div>
+
+      <br />
+
+      <div class="c5 visible-xs visible-sm">
+        This is a <em>small</em> screen
+      </div>
+      <div class="c6 visible-md visible-lg">
+        This is a <em>large</em> screen
+      </div>
+    </main>
+  </body>
+</html>
